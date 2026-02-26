@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philippe Tavares — Digital Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <nav class="navbar">
+    <div style="font-family:var(--font-mono); font-weight:700; color:var(--accent);">Philippe Tavares</div>
+    <div class="nav-links">
+      <a href="#about">sobre</a>
+      <a href="#journey">jornada</a>
+      <a href="#expertise">expertise</a>
+      <a href="#contact">contato</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="hero-content">
+      <div class="badge">DEVELOPER & SOFTWARE ENTHUSIAST</div>
+      <h1>Olá, eu sou o<br><span style="color:var(--accent);">Philippe Tavares.</span></h1>
+      <p class="hero-sub" style="text-align: left;">Um desenvolvedor júnior em constante evolução, focado em criar
+        soluções digitais que unem tecnologia de ponta e uma estética refinada.</p>
+      <div style="display:flex; gap:16px;">
+        <a href="#contact" class="tag"
+          style="background:var(--accent); color:#fff; padding:12px 32px; text-decoration:none;">ME CONTRATE</a>
+        <a href="#" class="tag" style="padding:12px 32px; text-decoration:none;">DOWNLOAD CV</a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <img src="assets/philippe.png" alt="Philippe Tavares" class="hero-photo">
+    </div>
+  </header>
+
+  <!-- 01 — Sobre -->
+  <section id="about" class="reveal">
+    <div class="section-header">
+      <span class="section-label">01 — minha história</span>
+      <h2>Do código básico à<br><span style="color:var(--accent);">engenharia de software.</span></h2>
+    </div>
+    <div style="display:grid; grid-template-columns: 1fr 1.2fr; gap:80px; align-items: start;">
+      <p class="hero-intro" style="font-size: 16px; line-height: 1.8;">
+        Natural de Alagoas, minha jornada no mundo da tecnologia começou com uma curiosidade insaciável sobre como as
+        coisas funcionam por trás das telas. <br><br>
+        Hoje, dedico meus dias a dominar o ecossistema JavaScript, construindo desde interfaces minimalistas até
+        aplicações robustas. Meu foco é sempre a **experiência do usuário** e a **qualidade do código**.
+      </p>
+      <div class="skill-card" style="padding: 40px; border-style: dashed;">
+        <h3 style="margin-bottom: 20px; color: var(--accent);">Valores Profissionais</h3>
+        <ul style="list-style: none; color: var(--text-dim); line-height: 2;">
+          <li>⚡ Aprendizado Ultra-Rápido</li>
+          <li>🎯 Atenção Obsessiva aos Detalhes</li>
+          <li>🤝 Colaboração e Comunicação Clara</li>
+          <li>💡 Resolução Criativa de Problemas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 — Jornada -->
+  <section id="journey" class="reveal">
+    <div class="section-header">
+      <span class="section-label">02 — trajetória profissional</span>
+      <h2>Onde eu estive.</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">2024 — PRESENTE</div>
+        <div class="timeline-title">Desenvolvedor Web Full-Stack (Freelance)</div>
+        <div class="timeline-desc">Atuando na criação de portfólios, landing pages e pequenos sistemas de gestão
+          utilizando Node.js e tecnologias modernas de front-end.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2023 — 2024</div>
+        <div class="timeline-title">Estudos Intensivos em Desenvolvimento</div>
+        <div class="timeline-desc">Foco em Back-end com Node.js, Express e bancos de dados (MongoDB/MySQL), além de
+          especialização em CSS avançado e animações.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">FORMAÇÃO</div>
+        <div class="timeline-title">Técnico em Informática / Cursos de Especialização</div>
+        <div class="timeline-desc">Base sólida em lógica de programação, estruturas de dados e desenvolvimento web
+          básico.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 — Expertise -->
+  <section id="expertise" class="reveal">
+    <div class="section-header">
+      <span class="section-label">03 — arsenal técnico</span>
+      <h2>Minhas ferramentas.</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3 style="font-size:18px; margin-bottom:12px;">Front-End</h3>
+        <div class="tag-cloud">
+          <span class="tag">JavaScript (ES6+)</span>
+          <span class="tag">HTML5 / CSS3</span>
+          <span class="tag">Animações CSS</span>
+          <span class="tag">Responsive UI</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3 style="font-size:18px; margin-bottom:12px;">Back-End</h3>
+        <div class="tag-cloud">
+          <span class="tag">Node.js</span>
+          <span class="tag">Express</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">JWT Auth</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3 style="font-size:18px; margin-bottom:12px;">Data & Tools</h3>
+        <div class="tag-cloud">
+          <span class="tag">MongoDB</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">GitHub / Git</span>
+          <span class="tag">Vercel / Heroku</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 — Contato -->
+  <section id="contact" class="reveal" style="text-align: center; margin-bottom: 200px;">
+    <span class="section-label">04 — pronto para o próximo passo?</span>
+    <h2 style="margin-bottom:32px;">Vamos construir algo<br><span style="color:var(--accent);">incrível juntos?</span>
+    </h2>
+    <div style="display:flex; justify-content:center; gap:16px;">
+      <button onclick="toggleWhatsapp()" class="tag"
+        style="background:var(--accent); color:#fff; padding:16px 40px; cursor:pointer; font-weight:700;">WHATSAPP</button>
+      <a href="mailto:philippetavares00@gmail.com" class="tag"
+        style="padding:16px 40px; text-decoration:none; display:inline-block;">ENVIAR EMAIL</a>
+    </div>
+    </header>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
