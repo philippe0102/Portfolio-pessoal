@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philippe Tavares — Desenvolvedor Web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio-style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════
+       SIDEBAR
+       ══════════════════════════════ -->
+  <aside>
+
+    <div class="avatar-wrap">
+      <div class="avatar">PT</div>
+      <div class="avatar-ring"></div>
+    </div>
+
+    <div class="name">Philippe Tavares</div>
+    <div class="role">Dev Júnior</div>
+
+    <div class="status">
+      <div class="status-dot"></div>
+      Disponível para projetos
+    </div>
+
+    <nav>
+      <a href="#sobre" class="active">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+        sobre
+      </a>
+      <a href="#skills">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+          <polyline points="2 17 12 22 22 17"/>
+          <polyline points="2 12 12 17 22 12"/>
+        </svg>
+        skills
+      </a>
+      <a href="#projetos">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+        </svg>
+        projetos
+      </a>
+      <a href="#contato">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        contato
+      </a>
+    </nav>
+
+    <!-- Rodapé: ícones sociais + bandeira BR -->
+    <div class="social-links">
+      <a href="#" title="GitHub">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+        </svg>
+      </a>
+      <a href="#" title="LinkedIn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
+          <circle cx="4" cy="4" r="2"/>
+        </svg>
+      </a>
+      <a href="mailto:philippetavares00@gmail.com" title="Email">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+      </a>
+      <div class="flag-badge" title="Brasil — Alagoas">
+        <svg width="28" height="20" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg" style="border-radius:4px;">
+          <rect width="28" height="20" fill="#009C3B"/>
+          <polygon points="14,1.5 26.5,10 14,18.5 1.5,10" fill="#FFDF00"/>
+          <circle cx="14" cy="10" r="5.2" fill="#002776"/>
+          <path d="M8.9,9.2 Q14,7.2 19.1,9.2" stroke="#fff" stroke-width="1.1" fill="none"/>
+          <circle cx="11"   cy="9.8"  r="0.5" fill="#fff"/>
+          <circle cx="14"   cy="8.6"  r="0.5" fill="#fff"/>
+          <circle cx="17"   cy="9.8"  r="0.5" fill="#fff"/>
+          <circle cx="12.5" cy="11.2" r="0.4" fill="#fff"/>
+          <circle cx="15.5" cy="11.2" r="0.4" fill="#fff"/>
+        </svg>
+        <span>BR — AL</span>
+      </div>
+    </div>
+
+  </aside>
+
+
+  <!-- ══════════════════════════════
+       CONTEÚDO PRINCIPAL
+       ══════════════════════════════ -->
+  <main>
+
+    <!-- 01 — SOBRE -->
+    <section id="sobre">
+      <div class="section-label">01 — sobre mim</div>
+      <h2>
+        Desenvolvedor<br>
+        <span style="color:var(--accent)">Júnior</span> apaixonado por<br>
+        criar experiências digitais.
+      </h2>
+      <p class="hero-intro">
+        Sou desenvolvedor júnior, atuando no desenvolvimento de sistemas web
+        escaláveis, responsivos e com foco em experiência do usuário. Tenho
+        experiência com tecnologias modernas de front-end e sou estudante de
+        back-end — sempre buscando melhorias para mim como indivíduo e profissional.
+      </p>
+      <a href="mailto:philippetavares00@gmail.com" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        Entrar em contato
+      </a>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-number">🚀</span>
+          <span class="stat-label">Em evolução constante</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">JS</span>
+          <span class="stat-label">Foco em JavaScript</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">🎯</span>
+          <span class="stat-label">Buscando oportunidades</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">💡</span>
+          <span class="stat-label">Sempre aprendendo</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 02 — SKILLS -->
+    <section id="skills">
+      <div class="section-label">02 — habilidades</div>
+      <h2>O que eu <span style="color:var(--accent)">domino</span></h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-title">Front-End</div>
+          <div class="skill-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Back-End</div>
+          <div class="skill-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">MongoDB</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">DevOps & Ferramentas</div>
+          <div class="skill-tags">
+            <span class="tag">GitHub</span>
+            <span class="tag">AWS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 03 — PROJETOS -->
+    <section id="projetos">
+      <div class="section-label">03 — projetos</div>
+      <h2>O que eu <span style="color:var(--accent)">construí</span></h2>
+      <div class="projects-grid">
+
+        <!-- SLOT 01 -->
+        <div class="project-card-empty">
+          <div class="empty-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+          <div class="empty-label">Projeto em breve</div>
+          <div class="empty-sublabel">slot 01</div>
+        </div>
+
+        <!-- SLOT 02 -->
+        <div class="project-card-empty">
+          <div class="empty-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+          <div class="empty-label">Projeto em breve</div>
+          <div class="empty-sublabel">slot 02</div>
+        </div>
+
+        <!-- SLOT 03 -->
+        <div class="project-card-empty">
+          <div class="empty-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+          <div class="empty-label">Projeto em breve</div>
+          <div class="empty-sublabel">slot 03</div>
+        </div>
+
+        <!-- SLOT 04 -->
+        <div class="project-card-empty">
+          <div class="empty-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+          <div class="empty-label">Projeto em breve</div>
+          <div class="empty-sublabel">slot 04</div>
+        </div>
+
+      </div>
+
+      <!--
+      ══════════════════════════════════════════════════════
+      MODELO PARA ADICIONAR PROJETOS — copie e substitua
+      um <div class="project-card-empty"> pelo código abaixo:
+      ══════════════════════════════════════════════════════
+
+      <a href="LINK_DO_PROJETO" class="project-card" target="_blank">
+        <div class="project-header">
+          <div class="project-icon">🔥</div>
+          <div class="project-links">
+            <a href="LINK_GITHUB" target="_blank" title="GitHub">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </a>
+            <a href="LINK_LIVE" target="_blank" title="Ver online">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="project-name">Nome do Projeto</div>
+        <p class="project-desc">Descrição breve do projeto.</p>
+        <div class="skill-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+        </div>
+      </a>
+      -->
+    </section>
+
+
+    <!-- 04 — CONTATO -->
+    <section id="contato">
+      <div class="section-label">04 — contato</div>
+      <div class="contact-box">
+        <h3>Vamos <span style="color:var(--accent)">trabalhar juntos?</span></h3>
+        <p>Estou disponível para projetos freelance e oportunidades como dev júnior.</p>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+          <a href="mailto:philippetavares00@gmail.com" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            philippetavares00@gmail.com
+          </a>
+          <button onclick="toggleWhatsapp()" class="btn btn-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.126 1.534 5.862L0 24l6.335-1.502A11.96 11.96 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.893 0-3.671-.5-5.214-1.378l-.374-.213-3.882.922.977-3.779-.237-.39A9.958 9.958 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+            </svg>
+            WhatsApp
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ══════════════════════════════
+       WHATSAPP POPUP
+       ══════════════════════════════ -->
+  <div id="wpp-popup" style="display:none;position:fixed;bottom:88px;right:24px;z-index:1000;">
+    <div style="background:#fff;border-radius:16px;box-shadow:0 8px 40px rgba(0,0,0,0.4);width:300px;overflow:hidden;font-family:'DM Sans',sans-serif;">
+      <div style="background:#075e54;padding:14px 18px;display:flex;align-items:center;gap:10px;">
+        <div style="width:40px;height:40px;border-radius:50%;background:#128c7e;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:16px;">PT</div>
+        <div>
+          <div style="color:#fff;font-weight:600;font-size:14px;">Philippe Tavares</div>
+          <div style="color:rgba(255,255,255,0.7);font-size:11px;">Desenvolvedor Web</div>
+        </div>
+        <button onclick="toggleWhatsapp()" style="margin-left:auto;background:none;border:none;color:rgba(255,255,255,0.7);cursor:pointer;font-size:18px;line-height:1;">✕</button>
+      </div>
+      <div style="background:#ece5dd;padding:16px;min-height:100px;">
+        <div style="background:#fff;border-radius:0 8px 8px 8px;padding:10px 14px;font-size:13px;color:#111;display:inline-block;max-width:240px;box-shadow:0 1px 2px rgba(0,0,0,0.1);">
+          Olá! 👋 Como posso te ajudar?
+          <div style="font-size:10px;color:#999;text-align:right;margin-top:4px;">agora</div>
+        </div>
+      </div>
+      <div style="background:#f0f0f0;padding:10px 12px;display:flex;gap:8px;align-items:center;">
+        <input id="wpp-msg" type="text" placeholder="Entre contato no WhatsApp"
+          style="flex:1;border:none;border-radius:20px;padding:10px 16px;font-size:13px;outline:none;background:#fff;font-family:'DM Sans',sans-serif;"
+          onkeydown="if(event.key==='Enter') sendWpp()"/>
+        <button onclick="sendWpp()" style="background:#25d366;border:none;border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botão flutuante WhatsApp -->
+  <button onclick="toggleWhatsapp()" title="Fale pelo WhatsApp"
+    style="position:fixed;bottom:24px;right:24px;width:56px;height:56px;border-radius:50%;background:#25d366;border:none;cursor:pointer;box-shadow:0 4px 16px rgba(37,211,102,0.4);display:flex;align-items:center;justify-content:center;z-index:999;transition:transform 0.2s;"
+    onmouseover="this.style.transform='scale(1.1)'"
+    onmouseout="this.style.transform='scale(1)'">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.126 1.534 5.862L0 24l6.335-1.502A11.96 11.96 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.893 0-3.671-.5-5.214-1.378l-.374-.213-3.882.922.977-3.779-.237-.39A9.958 9.958 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+    </svg>
+  </button>
+
+  <script src="portfolio-script.js"></script>
+</body>
+</html>

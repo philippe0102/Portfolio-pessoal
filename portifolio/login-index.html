@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philippe Tavares — Entrar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+
+  <!-- Fundo -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <!-- Card de login -->
+  <div class="login-card">
+
+    <!-- Avatar -->
+    <div class="avatar-wrap">
+      <div class="avatar">PT</div>
+      <div class="avatar-ring"></div>
+    </div>
+
+    <!-- Título -->
+    <div class="login-title">Philippe Tavares</div>
+    <div class="login-subtitle">
+      Portfólio pessoal<br>
+      <span>// dev júnior · BR — AL</span>
+    </div>
+
+    <!-- Campos -->
+    <div class="field">
+      <label for="user">usuário</label>
+      <input
+        type="text"
+        id="user"
+        placeholder="seu nome"
+        autocomplete="off"
+        onkeydown="if(event.key==='Enter') document.getElementById('pass').focus()"
+      />
+      <div class="error-msg" id="user-error">Preencha o nome de usuário</div>
+    </div>
+
+    <div class="field">
+      <label for="pass">senha</label>
+      <input
+        type="password"
+        id="pass"
+        placeholder="••••••••"
+        onkeydown="if(event.key==='Enter') doLogin()"
+      />
+      <div class="error-msg" id="pass-error">Senha incorreta</div>
+    </div>
+
+    <button class="btn-login" id="btn-login" onclick="doLogin()">
+      Acessar portfólio →
+    </button>
+
+    <div class="divider"><span>ou</span></div>
+
+    <button class="btn-guest" onclick="enterPortfolio()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+        <circle cx="12" cy="7" r="4"/>
+      </svg>
+      Entrar como visitante
+    </button>
+
+    <!-- Rodapé -->
+    <div class="login-footer">
+      <svg width="20" height="14" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
+        <rect width="28" height="20" fill="#009C3B"/>
+        <polygon points="14,1.5 26.5,10 14,18.5 1.5,10" fill="#FFDF00"/>
+        <circle cx="14" cy="10" r="5.2" fill="#002776"/>
+        <path d="M8.9,9.2 Q14,7.2 19.1,9.2" stroke="#fff" stroke-width="1.1" fill="none"/>
+        <circle cx="11"   cy="9.8"  r="0.5" fill="#fff"/>
+        <circle cx="14"   cy="8.6"  r="0.5" fill="#fff"/>
+        <circle cx="17"   cy="9.8"  r="0.5" fill="#fff"/>
+        <circle cx="12.5" cy="11.2" r="0.4" fill="#fff"/>
+        <circle cx="15.5" cy="11.2" r="0.4" fill="#fff"/>
+      </svg>
+      philippetavares00@gmail.com
+    </div>
+
+  </div>
+
+  <!-- Tela de sucesso -->
+  <div class="success-overlay" id="success">
+    <div class="success-icon">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgb(19,189,198)" stroke-width="2.5">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+    </div>
+    <div class="success-text">Bem-vindo!</div>
+  </div>
+
+  <script src="login-script.js"></script>
+</body>
+</html>
